@@ -11,6 +11,7 @@ import HeroImage from '../svg/HeroImage';
 import Workshops from '../svg/Workshops'
 import GlobalOrientation from '../svg/GlobalOrientaiton'
 import Marketing from '../svg/Marketing'
+import { ProactiveIcon, InclusiveIcon, CollaborativeIcon } from '../svg/Motifs' 
 
 export default () => (
   <Layout>
@@ -27,21 +28,31 @@ export default () => (
             <Button size="lg">Get Started</Button>
           </p>
         </div>
-        <div className="mt-12 sm:mt-15 md:mt-6 lg:w-1/2">
-          <HeroImage />
+        <div className="mt-12 sm:mt-16 md:mt-6 lg:w-1/2">
+          <HeroImage/>
+        </div>
+      </div>
+    </section>
+    <section id="about" className="mt-16 pt-10 pb-16 lg:pb-10 lg:pt-10 bg-gray-100">
+      <div className="container mx-auto text-center">
+        <h2 className="text-3xl lg:text-5xl font-semibold">What we do</h2>
+        <div className="mt-6 p-6 sm:p-6 text-3xl">
+          We provide educational stratergies which satisfy the changing needs of the higher education sector.
         </div>
       </div>
     </section>
     <section id="what" className="mt-25 pt-10 lg:pb-20 lg:pt-20 bg-primary-lighter">
       <div className="container mx-auto text-center">
-        <h2 className="text-3xl lg:text-5xl font-semibold">What we do</h2>
+        <h2 className="text-3xl lg:text-5xl font-semibold">What we are</h2>
         <div className="mt-6 p-6 sm:p-6 text-xl">
-          We provide educational stratergies which satisfy the changing needs of the higher education sector. We aim to create
-          a strategic development process that is Proactive, Inclusive and Collaborative.
+          We aim to create a strategic development process that is Proactive, Inclusive and Collaborative.
         </div>
         <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
           <div className="flex-1 px-3">
             <Card className="mb-8 bg-white">
+              <p className="m-6 p-6 w-32 m-auto">
+                <ProactiveIcon />
+              </p>
               <p className="font-semibold text-xl">Proactive</p>
               <p className="mt-4">
                 We analyse the needs of the industry and nature of higher education demands along with research and stakeholder data.
@@ -50,6 +61,9 @@ export default () => (
           </div>
           <div className="flex-1 px-3">
             <Card className="mb-8 bg-white">
+              <p className="m-6 p-6 w-32 m-auto">
+                <InclusiveIcon />
+              </p>
               <p className="font-semibold text-xl">Inclusive</p>
               <p className="mt-4">
                 We will deliver the most general-to-specific skill set which suits all students with different inclinations.
@@ -58,6 +72,9 @@ export default () => (
           </div>
           <div className="flex-1 px-3">
             <Card className="mb-8 bg-white">
+              <p className="m-6 p-6 w-32 m-auto">
+                <CollaborativeIcon />
+              </p>
               <p className="font-semibold text-xl">Collaborative</p>
               <p className="mt-4">
                 We ensure that students collaborate with professionals in the industry through projects, internships and research work.
@@ -71,7 +88,7 @@ export default () => (
       id="services"
       primarySlot={
         <div className="lg:pr-32 xl:pr-48">
-          <h3 className="text-3xl font-semibold leading-tight">Workshops</h3>
+          <h3 className="text-3xl font-semibold leading-tight">Workshops, Courses and Internships</h3>
           <p className="mt-8 text-xl font-light leading-relaxed">
             We will facilitate better understanding of industry need through, Skill Development Workshops, Faculty Development Workshops, Internships and Industry opportunities to help students and faculty members understand the changing requirements and adapt to the challenges of the real world.
           </p>
@@ -106,42 +123,5 @@ export default () => (
       }
       secondarySlot={<Marketing/>}
     />
-    <section id="stats" className="py-20 lg:pt-32">
-      <div className="container mx-auto text-center">
-        <LabelText className="text-gray-600">Our customers get results</LabelText>
-        <div className="flex flex-col sm:flex-row mt-8 lg:px-24">
-          <div className="w-full sm:w-1/3">
-            <StatsBox primaryText="+100%" secondaryText="Stats Information" />
-          </div>
-          <div className="w-full sm:w-1/3">
-            <StatsBox primaryText="+100%" secondaryText="Stats Information" />
-          </div>
-          <div className="w-full sm:w-1/3">
-            <StatsBox primaryText="+100%" secondaryText="Stats Information" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="testimonials" className="py-20 lg:py-40">
-      <div className="container mx-auto">
-        <LabelText className="mb-8 text-gray-600 text-center">What customers are saying</LabelText>
-        <div className="flex flex-col md:flex-row md:-mx-3">
-          {customerData.map(customer => (
-            <div key={customer.customerName} className="flex-1 px-3">
-              <CustomerCard customer={customer} />
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-    <section className="container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center">
-      <h3 className="text-5xl font-semibold">Ready to grow your business?</h3>
-      <p className="mt-8 text-xl font-light">
-        Quis lectus nulla at volutpat diam ut. Enim lobortis scelerisque fermentum dui faucibus in.
-      </p>
-      <p className="mt-8">
-        <Button size="xl">Get Started Now</Button>
-      </p>
-    </section>
   </Layout>
 );
