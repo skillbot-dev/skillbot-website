@@ -4,14 +4,14 @@ import LogoIcon from '../../svg/LogoIcon';
 import Button from '../Button';
 
 const Header = () => (
-  <header className="sticky stop-0 bg-white shadow header" >
+  <header className="sticky stop-0 bg-white shadow header font-raleway" >
     <div className="container flex flex-col sm:flex-row justify-between items-center mx-auto py-4 px-8">
       <div className="flex items-center text-2xl">
         <div className="w-64">
           <LogoIcon />
         </div>
       </div>
-      <div className="flex mt-4 sm:mt-0">
+      <div className="flex mt-4 sm:mt-0 text-md lg:text-xl xl:text-xl">
         <AnchorLink className="px-4" href="#">
           Home
         </AnchorLink>

@@ -8,13 +8,15 @@ import SplitSection from '../components/SplitSection';
 import StatsBox from '../components/StatsBox';
 import customerData from '../data/customer-data';
 import HeroImage from '../svg/HeroImage';
-import SvgCharts from '../svg/SvgCharts';
+import Workshops from '../svg/Workshops'
+import GlobalOrientation from '../svg/GlobalOrientaiton'
+import Marketing from '../svg/Marketing'
 
 export default () => (
   <Layout>
-    <section className="pt-20 md:pt-20">
+    <section className="pt-10 md:pt-20 pb-20 md:pb-20">
       <div className="container mx-auto px-8 lg:flex">
-        <div className="lg:mt-20 text-center lg:text-left lg:w-1/2">
+        <div className="lg:mt-12 text-center lg:text-left lg:w-1/2">
           <h1 className="text-6xl lg:text-6xl xl:text-6xl font-sans font-bold leading-none">
             Welcome <br /> to  Skillbot
           </h1>
@@ -30,20 +32,19 @@ export default () => (
         </div>
       </div>
     </section>
-    <section id="features" className="mt-20 py-20 lg:pb-40 lg:pt-20 bg-primary-lighter">
+    <section id="what" className="mt-25 pt-10 lg:pb-20 lg:pt-20 bg-primary-lighter">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl lg:text-5xl font-semibold">What we do</h2>
-        <div className="mt-6">
+        <div className="mt-6 p-6 sm:p-6 text-xl">
           We provide educational stratergies which satisfy the changing needs of the higher education sector. We aim to create
-          a strategic development process that is <br />Proactive, Inclusive and Collaborative.
+          a strategic development process that is Proactive, Inclusive and Collaborative.
         </div>
         <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
           <div className="flex-1 px-3">
             <Card className="mb-8 bg-white">
               <p className="font-semibold text-xl">Proactive</p>
               <p className="mt-4">
-                An enim nullam tempor gravida donec enim ipsum blandit porta justo integer odio
-                velna vitae auctor integer.
+                We analyse the needs of the industry and nature of higher education demands along with research and stakeholder data.
               </p>
             </Card>
           </div>
@@ -51,8 +52,7 @@ export default () => (
             <Card className="mb-8 bg-white">
               <p className="font-semibold text-xl">Inclusive</p>
               <p className="mt-4">
-                An enim nullam tempor gravida donec enim ipsum blandit porta justo integer odio
-                velna vitae auctor integer.
+                We will deliver the most general-to-specific skill set which suits all students with different inclinations.
               </p>
             </Card>
           </div>
@@ -60,8 +60,7 @@ export default () => (
             <Card className="mb-8 bg-white">
               <p className="font-semibold text-xl">Collaborative</p>
               <p className="mt-4">
-                An enim nullam tempor gravida donec enim ipsum blandit porta justo integer odio
-                velna vitae auctor integer.
+                We ensure that students collaborate with professionals in the industry through projects, internships and research work.
               </p>
             </Card>
           </div>
@@ -72,43 +71,40 @@ export default () => (
       id="services"
       primarySlot={
         <div className="lg:pr-32 xl:pr-48">
-          <h3 className="text-3xl font-semibold leading-tight">Market Analysis</h3>
+          <h3 className="text-3xl font-semibold leading-tight">Workshops</h3>
           <p className="mt-8 text-xl font-light leading-relaxed">
-            Our team of enthusiastic marketers will analyse and evaluate how your company stacks
-            against the closest competitors
+            We will facilitate better understanding of industry need through, Skill Development Workshops, Faculty Development Workshops, Internships and Industry opportunities to help students and faculty members understand the changing requirements and adapt to the challenges of the real world.
           </p>
         </div>
       }
-      secondarySlot={<SvgCharts />}
+      secondarySlot={<Workshops/>}
     />
     <SplitSection
       reverseOrder
       primarySlot={
         <div className="lg:pl-32 xl:pl-48">
           <h3 className="text-3xl font-semibold leading-tight">
-            Design And Plan Your Business Growth Steps
+            Global Orientation
           </h3>
           <p className="mt-8 text-xl font-light leading-relaxed">
-            Once the market analysis process is completed our staff will search for opportunities
-            that are in reach
+            Through induction programmes, guest lectures and international tie-ups. Using experience, reach and networking built over years of trust, collaboration and in the spirit of continuous learning.
           </p>
         </div>
       }
-      secondarySlot={<SvgCharts />}
+      secondarySlot={<GlobalOrientation/>}
     />
     <SplitSection
       primarySlot={
         <div className="lg:pr-32 xl:pr-48">
           <h3 className="text-3xl font-semibold leading-tight">
-            Search For Performance Optimization
+            Data Analysis and Performance Optimzation
           </h3>
           <p className="mt-8 text-xl font-light leading-relaxed">
-            With all the information in place you will be presented with an action plan that your
-            company needs to follow
+            As an education startergry platform, we monitor and provide analysis on the most recent trends in the industry and provide insight to students and educational institutions to achieve our main goal talent transformation.
           </p>
         </div>
       }
-      secondarySlot={<SvgCharts />}
+      secondarySlot={<Marketing/>}
     />
     <section id="stats" className="py-20 lg:pt-32">
       <div className="container mx-auto text-center">
