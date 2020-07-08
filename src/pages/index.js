@@ -15,7 +15,7 @@ import { ProactiveIcon, InclusiveIcon, CollaborativeIcon } from '../svg/Motifs'
 export default () => (
   <Layout>
     <section className="pt-10 md:pt-20 pb-20 md:pb-20">
-      <div className="container mx-auto px-8 lg:flex">
+      <div className="container mx-auto px-8 lg:flex items-center">
         <div className="lg:mt-12 text-center lg:text-left lg:w-1/2">
           <h1 className="text-6xl lg:text-6xl xl:text-6xl font-raleway font-bold leading-none">
             Welcome <br /> to  Skillbot
@@ -33,7 +33,7 @@ export default () => (
         </div>
       </div>
     </section>
-    <section id="about" className="mt-16 pt-10 pb-16 lg:pb-10 lg:pt-10 bg-gray-100">
+    <section className="mt-16 pt-10 pb-16 lg:pb-10 lg:pt-10 bg-gray-100">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl lg:text-5xl font-semibold">What we do</h2>
         <div className="mt-6 p-6 sm:p-6 text-3xl">
@@ -123,5 +123,11 @@ export default () => (
       }
       secondarySlot={<Marketing/>}
     />
+    <section className="mx-auto py-24 bg-gray-200 rounded-lg text-center shadow">
+      <h3 className="text-2xl font-semibold">Find out more about Skillbot</h3>
+      <p className="mt-8">
+        <Button className="rounded-full" size="xl" toPage="/about">About</Button>
+      </p>
+    </section>
   </Layout>
 );

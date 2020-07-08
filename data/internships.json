@@ -3,36 +3,119 @@
     "slug":"data-science-with-python",
     "title": "Data Science using Python",
     "sponsoredBy":"BNM Institute of Technology",
-    "content":
-      "Eu lobortis elementum nibh tellus molestie nunc non blandit massa. Sit amet consectetur adipiscing elit duis.",
     "startDate": "13th July, 2020",
     "duration": "4 weeks",
+    "timings":"9:00am to 1:00pm",
     "registrationFee": "Rs.2000", 
-    "registrationLink": "https://forms.gle/yWvx4zHHed5Qoxc79",
-    "image": "./images/intern.png"
+    "registrationLink": "https://forms.gle/pBk1q5dQEW3dizTX9",
+    "image": "./images/data-science.png",
+    "contact_1": {
+      "name": "Dr.Sejal Santosh Nimbhorkar",
+      "phone": "+91 96110 82624"
+    },
+    "contact_2": {
+      "name": "Prof. Preetham B",
+      "phone": "+91 99003 45682"
+    },
+    "topics_covered":[
+      "Introduction to Data Science",
+      "Visualization of Data",
+      "Statistical Foundation in Data Science",
+      "Gradient descent and Regression",
+      "Preprocessing of Data",
+      "Association Rule Mining",
+      "Classification and Clustering",
+      "Sentiment Analysis",
+      "Recommendation Systems",
+      "Text Summarization",
+      "Introduction to Business Intelligence and Big Data"
+    ],
+    "key_features":[
+      "Inexpensive Course on the Fundamentals of Data Science",
+      "Internship Experience with Skillbot : Education Stratergies",
+      "Course Delivered by Expert Data Scientists",
+      "Top 10 students/interns will be guided to publish papers",
+      "A full-fledged data science project"
+    ],
+    "position":"Data Science Intern",
+    "career_prospects": "Data Scientist, Data Analyst, Data Engineer, AI Engineer, ML Engineer"
   },
+
   {
     "slug":"digitial-image-processing",
     "title": "Digital Image Processing",
     "sponsoredBy" : "BNM Institute of Technology",
-    "content":
-      "Eu lobortis elementum nibh tellus molestie nunc non blandit massa. Sit amet consectetur adipiscing elit duis.",
     "startDate": "13th July, 2020",
     "duration": "4 weeks",
+    "timings": "3:00pm to 7:00pm",
     "registrationFee": "Rs.2000",
-    "registrationLink": "https://forms.gle/yWvx4zHHed5Qoxc79",
-    "image": "./images/intern.png"
+    "registrationLink": "https://forms.gle/kTbUrpBz9hSTs8iv6",
+    "image": "./images/digital-image-processing.png",
+    "contact_1": {
+      "name": "Dr.Sarith Chakrasali",
+      "phone": "+91 99450 35647"
+    },
+    "contact_2": {
+      "name": "Prof. Harini S",
+      "phone": "+91 90080 41480"
+    },
+    "topics_covered": [
+      "Introduction to Image Processing",
+      "The MATLAB computing Environment",
+      "Learn M Function programming ",
+      "Gradient descent and Regression",
+      "Perform Digital Image Processing using MATLAB",
+      "Image Enhancement Techniques",
+      "Image Filtering",
+      "Edge Detection Operation",
+      "Frequency domain processing- 2D Wavelet Transforms",
+      "Playing with Colour Images",
+      "Learn Parallel Computing"
+    ],
+    "key_features": [
+      "Learn from Research Specialists",
+      "Internship at Skillbot : Education Stratergies",
+      "Hands on learing with MATLAB",
+      "Learn about industry standards in image processing",
+      "Top 5 students get assistance to publish a paper."
+    ],
+    "position": "Digital Image Processing Intern",
+    "career_prospects":"Image Processing Engineers in fields of science, engineering, defence, manufacturing, agriculture etc."
   },
+
   {
     "slug":"vlsi-design",
     "title": "VLSI Design and Verification",
     "sponsoredBy" : "Project Bhageerathi",
-    "content":
-      "Eu lobortis elementum nibh tellus molestie nunc non blandit massa. Sit amet consectetur adipiscing elit duis.",
     "startDate" : "13th July, 2020",
     "duration" : "4 weeks",
+    "timings": "9:00am to 1:00pm",
     "registrationFee" : "Rs.2000",
     "registrationLink": "https://forms.gle/yWvx4zHHed5Qoxc79",
-    "image": "./images/intern.png"
+    "image": "./images/vlsi-design.png",
+    "contact_1": {
+      "name": "Dr.Veena S Chakravarthi",
+      "phone": "+91 98459 80607"
+    },
+    "contact_2": {
+      "name": "Dr. Yasha Jyothi M S",
+      "phone": "+91 94484 31932"
+    },"topics_covered": [
+      "Fundamentals of VLSI Design",
+      "Formulate and Translate real-life statements to Design Specification",
+      "Logic Design from Specification",
+      "Logic Verification by Simulations and Debugging",
+      "Exposure to Synthesis Flow and Understanding Reports and Logs",
+      "Hands-on learning through assignmnents and a mini-project"
+    ],
+    "key_features": [
+      "Top students will get an opportunity to work in Project Bhageerathi Chip Design Center in BNM Institute of Technology",
+      "Learn from Research Specialists",
+      "Internship at Skillbot : Education Stratergies",
+      "Explore Design Flow Case Studies",
+      "Guided Mini-Project"
+    ],
+    "position": "VLSI Design Intern",
+    "career_prospects": "VLSI Design Engineer, VLSI Design Verification Engineer in VLSI Design Centers"
   }
 ]

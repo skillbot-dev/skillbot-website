@@ -1,8 +1,6 @@
 import React from 'react';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
 import LogoIcon from '../../svg/LogoIcon';
 import { Link } from 'gatsby'
-import Button from '../Button';
 
 const Header = () => (
   <header className="sticky stop-0 bg-white shadow header font-raleway" >
@@ -16,15 +14,12 @@ const Header = () => (
         <Link className="px-4" to="/">
           Home
         </Link>
-        <AnchorLink className="px-4" href="#about">
+        <Link className="px-4" href="/about">
           About
-        </AnchorLink>
+        </Link>
         <Link className="px-4" to="/internships">
           Internships
         </Link>
-        <AnchorLink className="px-4" href="#contact">
-          Contact
-        </AnchorLink>
       </div>
     </div>
   </header>

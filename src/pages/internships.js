@@ -29,7 +29,6 @@ const Internships = ({ data }) => {
                                 slug
                                 title
                                 sponsoredBy
-                                content
                                 startDate
                                 duration
                                 registrationFee
@@ -47,11 +46,12 @@ const Internships = ({ data }) => {
                 }
             `}
                 render={data => (
-                    data.allInternshipsJson.edges.map((internship,i) => (
+                    data.allInternshipsJson.edges.map((internship, i) => (
                         <SplitSection
-                            reverseOrder = {i % 2 == 0}
+                            reverseOrder={i % 2 == 0}
                             primarySlot={
                                 <div className="text-center lg:text-left md:p-10 xl:text-left xl:p-20">
+                                    <div>{console.log(internship.node)}</div>
                                     <h3 className="text-3xl font-semibold leading-tight">{internship.node.title}</h3>
                                     <p className="mt-8 text-xl font-light leading-relaxed mb-10">
                                         {internship.node.duration}<br />
