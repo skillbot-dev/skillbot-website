@@ -1,10 +1,11 @@
 module.exports = {
   theme: {
     extend: {
+      fontFamily: {
+        raleway: ["Raleway"],
+        montserrat: ["Montserrat"]
+      },
       colors: {
-        fontFamily: {
-          raleway: ["Raleway"]
-        },
         primary: {
           lighter: '#E0F2F1',
           default: '#80CBC4',

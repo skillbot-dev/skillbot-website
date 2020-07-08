@@ -1,0 +1,38 @@
+[
+  {
+    "slug":"data-science-with-python",
+    "title": "Data Science using Python",
+    "sponsoredBy":"BNM Institute of Technology",
+    "content":
+      "Eu lobortis elementum nibh tellus molestie nunc non blandit massa. Sit amet consectetur adipiscing elit duis.",
+    "startDate": "13th July, 2020",
+    "duration": "4 weeks",
+    "registrationFee": "Rs.2000", 
+    "registrationLink": "https://forms.gle/yWvx4zHHed5Qoxc79",
+    "image": "./images/intern.png"
+  },
+  {
+    "slug":"digitial-image-processing",
+    "title": "Digital Image Processing",
+    "sponsoredBy" : "BNM Institute of Technology",
+    "content":
+      "Eu lobortis elementum nibh tellus molestie nunc non blandit massa. Sit amet consectetur adipiscing elit duis.",
+    "startDate": "13th July, 2020",
+    "duration": "4 weeks",
+    "registrationFee": "Rs.2000",
+    "registrationLink": "https://forms.gle/yWvx4zHHed5Qoxc79",
+    "image": "./images/intern.png"
+  },
+  {
+    "slug":"vlsi-design",
+    "title": "VLSI Design and Verification",
+    "sponsoredBy" : "Project Bhageerathi",
+    "content":
+      "Eu lobortis elementum nibh tellus molestie nunc non blandit massa. Sit amet consectetur adipiscing elit duis.",
+    "startDate" : "13th July, 2020",
+    "duration" : "4 weeks",
+    "registrationFee" : "Rs.2000",
+    "registrationLink": "https://forms.gle/yWvx4zHHed5Qoxc79",
+    "image": "./images/intern.png"
+  }
+]

@@ -1,4 +1,5 @@
 import React from 'react';
+import { navigate } from '@reach/router'
 
 const sizes = {
   default: `py-3 px-8`,
@@ -6,15 +7,16 @@ const sizes = {
   xl: `py-5 px-16 text-lg`
 };
 
-const Button = ({ children, className = '', size }) => {
+const Button = ({ children, className = '', size, toPage = '#' }) => {
   return (
     <button
       type="button"
+      onClick= { () => navigate(toPage) }
       className={`
         ${sizes[size] || sizes.default}
         ${className}
-        bg-primary
-        hover:bg-primary-darker
+        bg-primary-darker
+        hover:bg-primary
         rounded
         text-white
     `}
