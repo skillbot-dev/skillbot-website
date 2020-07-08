@@ -25,7 +25,7 @@ export default () => (
           </p>
           <p className="mt-6 text-gray-600 font-montserrat">Get started with internships.</p>
           <p className="mt-2 md:mt-6 text-xl font-bold font-raleway">
-            <Button className="rounded-full" size="lg" toPage='/internship'>Know More</Button>
+            <Button className="rounded-full" size="lg" toPage='/internships'>Know More</Button>
           </p>
         </div>
         <div className="mt-12 sm:mt-16 md:mt-6 lg:w-1/2">
