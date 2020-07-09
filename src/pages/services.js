@@ -61,22 +61,16 @@ const Services = ({ data }) => {
                     <div className="mt-2 p-6 sm:p-6 text-lg xl:text-2xl text-left">
                         <ul className="list-disc ml-4 p-6 text-justify">
                             <li className="mb-4">
-                                Fresh pool of talent with right blend of skills and attitude
+                                Fresh pool of talent with the right blend of skills and attitude
                             </li>
                             <li className="mb-4">
-                                We train students at campus for specialized skills relevant for the roles including behavioral skills with holistic method
+                                On campus training to students in specialized skills relevant to the roles including behavioral skills in a holistic manner.
                             </li>
                             <li className="mb-4">
-                                We train students at campus for specialized skills relevant for the roles including behavioral skills with holistic method
+                                'Train the Trainer' programs to encourage self-reliance
                             </li>
                             <li className="mb-4">
-                                We train the trainers to become self-reliant 
-                            </li>
-                            <li className="mb-4">
-                                We undertake turnkey projects for organizational perception building and transformations for effectiveness.
-                            </li>
-                            <li className="mb-4">
-                                We undertake perception and branding of any educational institutions.
+                                Undertake turnkey projects for organizational perception building and transformation for effectiveness.
                             </li>
                         </ul>
                     </div>

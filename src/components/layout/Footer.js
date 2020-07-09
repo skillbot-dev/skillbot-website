@@ -53,11 +53,15 @@ const Footer = () => (
 					</ul>
 				</div>
 				<div className="w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 px-3 p-6">
-					<h2 className="text-lg font-semibold">Social Media</h2>
+					<h2 className="text-lg font-semibold">Social Media & Contact</h2>
 					<ul className="mt-4 leading-loose">
 						<li>
 							<SocialIcon style={{ height: '30px', width: '30px' }} className="mr-2" bgColor="white" url="https://linkedin.com/company/skillbot" />
 							<a className="text-lg text-white" href="https://linkedin.com/company/skillbot">LinkedIn</a>
+						</li>
+						<li>
+							<SocialIcon style={{ height: '30px', width: '30px' }} className="mr-2" bgColor="white" url="mailto:scill.bott@gmail.com" />
+							<a className="text-lg text-white" href="https://linkedin.com/company/skillbot">scill.bott@gmail.com</a>
 						</li>
 					</ul>
 				</div>

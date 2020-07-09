@@ -75,12 +75,12 @@ const InternshipTemplate = ({ data }) => {
                                     <li className="mb-4" key={i}>{feature}</li>
                                 ))
                             }
-                            <li className="mb-4">Career Prospects in {internship.career_prospects}</li>
+                            <li className="mb-4">Career Prospects as {internship.career_prospects}</li>
                         </ul>
                     </div>
                 </div>
             </section>
-            <section className="mt-16 pt-10 pb-16 lg:pb-10 lg:pt-10 bg-primary-lighter">
+            <section className="pt-10 pb-16 lg:pb-10 lg:pt-10 bg-primary-lighter">
                 <div className="container mx-auto text-center">
                     <h2 className="text-3xl lg:text-5xl font-semibold">Topics Covered</h2>
                     <div className="mt-2 p-6 sm:p-6 text-lg xl:text-3xl text-left">
