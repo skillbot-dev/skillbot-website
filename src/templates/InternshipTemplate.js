@@ -65,26 +65,26 @@ const InternshipTemplate = ({ data }) => {
                     </div>
                 </div>
             </section>
-            <section className="pt-10 pb-16 lg:pb-10 lg:pt-10 bg-gray-100">
-                <div className="container mx-auto pl-10 text-center">
-                    <h2 className="w-full text-2xl mb-4 lg:text-2xl font-semibold">Key Features</h2>
-                    <div className="mx-auto text-xl w-3/4">
-                        <ul className="list-disc text-left text-lg lg:text-xl">
+            <section className="mt-16 pt-10 pb-16 lg:pb-10 lg:pt-10 bg-gray-100">
+                <div className="container mx-auto text-center">
+                    <h2 className="text-3xl lg:text-5xl font-semibold">Key Features</h2>
+                    <div className="mt-2 p-6 sm:p-6 text-lg xl:text-3xl text-left">
+                        <ul className="list-disc ml-4 p-6 text-justify">
                             {
-                                internship.key_features.map((feature,i)=>(
+                                internship.key_features.map((feature, i) => (
                                     <li className="mb-4" key={i}>{feature}</li>
                                 ))
                             }
-                            <li>Career Prospects in {internship.career_prospects}</li>
+                            <li className="mb-4">Career Prospects in {internship.career_prospects}</li>
                         </ul>
                     </div>
                 </div>
             </section>
-            <section className="pt-10 pb-16 lg:pb-10 lg:pt-10 bg-primary-lighter">
-                <div className="container mx-auto pl-10 text-center">
-                    <h2 className="w-full text-2xl mb-4 lg:text-2xl font-semibold">Topics Covered</h2>
-                    <div className="mx-auto text-xl w-3/4">
-                        <ul className="list-disc text-left text-lg lg:text-xl">
+            <section className="mt-16 pt-10 pb-16 lg:pb-10 lg:pt-10 bg-primary-lighter">
+                <div className="container mx-auto text-center">
+                    <h2 className="text-3xl lg:text-5xl font-semibold">Topics Covered</h2>
+                    <div className="mt-2 p-6 sm:p-6 text-lg xl:text-3xl text-left">
+                        <ul className="list-disc ml-4 p-6 text-justify">
                             {
                                 internship.topics_covered.map((topic, i) => (
                                     <li className="mb-4" key={i}>{topic}</li>
@@ -101,7 +101,10 @@ const InternshipTemplate = ({ data }) => {
                         <div className="flex-1 px-3">
                             <Card className="mb-8 bg-white">
                                 <p className="font-semibold text-xl">{internship.contact_1.name}</p>
-                                <p className="mt-4">
+                                <p className="mt-2 text-md">
+                                    Consultant, Skillbot
+                                </p>
+                                <p className="mt-4 text-lg font-bold">
                                     {internship.contact_1.phone}
                                 </p>
                             </Card>
@@ -109,7 +112,10 @@ const InternshipTemplate = ({ data }) => {
                         <div className="flex-1 px-3">
                             <Card className="mb-8 bg-white">
                                 <p className="font-semibold text-xl">{internship.contact_2.name}</p>
-                                <p className="mt-4">
+                                <p className="mt-2 text-md">
+                                    Consultant, Skillbot
+                                </p>
+                                <p className="mt-4 text-lg font-bold">
                                     {internship.contact_2.phone}
                                 </p>
                             </Card>

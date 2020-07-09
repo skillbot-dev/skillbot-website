@@ -1,0 +1,24 @@
+[
+    {
+        "slug": "skillbot-personal",
+        "title": "Skillbot Personal",
+        "features": [
+            "If you have intellect and determination to live your dreams, you will prepare yourself for professional practice with Skillbot certifications.",
+            "Study with practicing Industry experts.",
+            "See the impact of education in real times.",
+            "Wholesome Holistic development."
+        ],
+        "image":"./images/skillbot-personal.png"
+    },
+    {
+        "slug": "skillbot-institutional",
+        "title": "Skillbot Organizational/Institutional",
+        "features": [
+            "Perception Changes",
+            "Behavioural Transformations",
+            "Organizational effectiveness",
+            "Educational Institutional Effectiveness"
+        ],
+        "image":"./images/skillbot-organizational.png"
+    }
+]

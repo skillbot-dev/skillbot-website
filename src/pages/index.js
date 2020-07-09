@@ -14,18 +14,18 @@ import { ProactiveIcon, InclusiveIcon, CollaborativeIcon } from '../svg/Motifs'
 
 export default () => (
   <Layout>
-    <section className="pt-10 md:pt-20 pb-20 md:pb-20">
+    <section className="pt-10 md:pt-18 pb-18 md:pb-18">
       <div className="container mx-auto px-8 lg:flex items-center">
         <div className="lg:mt-12 text-center lg:text-left lg:w-1/2">
           <h1 className="text-6xl lg:text-6xl xl:text-6xl font-raleway font-bold leading-none">
-            Welcome <br /> to  Skillbot
+            When you want<br />to change, think Skillbot
           </h1>
           <p className="font-montserrat text-3xl lg:text-4xl mt-6 font-light">
-            Where the future of work <br /> is the future of education
+            Let us future proof you.
           </p>
-          <p className="mt-6 text-gray-600 font-montserrat">Get started with internships.</p>
+          <p className="mt-6 text-gray-600 font-montserrat">We are offering internships. Get started now.</p>
           <p className="mt-2 md:mt-6 text-xl font-bold font-raleway">
-            <Button className="rounded-full" size="lg" toPage='/internships'>Know More</Button>
+            <Button className="rounded-full" size="lg" toPage='/internships'>Internships</Button>
           </p>
         </div>
         <div className="mt-12 sm:mt-16 md:mt-6 lg:w-1/2">
@@ -33,21 +33,19 @@ export default () => (
         </div>
       </div>
     </section>
-    <section className="mt-16 pt-10 pb-16 lg:pb-10 lg:pt-10 bg-gray-100">
+    <section id="what" className="mt-24 pt-10 lg:pb-18 lg:pt-18 bg-primary-lighter">
       <div className="container mx-auto text-center">
-        <h2 className="text-3xl lg:text-5xl font-semibold">What we do</h2>
-        <div className="mt-6 p-6 sm:p-6 text-3xl">
-          <p>We provide educational stratergies which satisfy the changing needs of the higher education sector.</p>
+        <h2 className="text-3xl lg:text-5xl font-semibold leading-relaxed">What we are</h2>
+        <div className="mt-6 p-12 sm:p-6 text-lg xl:text-2xl text-center">
+          <p className="mb-6">Skillbot aims to develop every student for tomorrow’s professional practice or research.</p>
+          <p className="mb-6">
+            The <span className="font-bold">Education Strategy</span> articulates the attributes of our future graduates.
+          </p>
+          <p className="mb-6">
+            These are shaped by our understanding of the skills, knowledge, attributes, experiences and behaviors required of our students by employers in an increasingly competitive and global workforce.
+          </p>
         </div>
-      </div>
-    </section>
-    <section id="what" className="mt-25 pt-10 lg:pb-20 lg:pt-20 bg-primary-lighter">
-      <div className="container mx-auto text-center">
-        <h2 className="text-3xl lg:text-5xl font-semibold">What we are</h2>
-        <div className="mt-6 p-6 sm:p-6 text-2xl">
-          <p>We aim to create a strategic development process that is Proactive, Inclusive and Collaborative.</p>
-        </div>
-        <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
+        <div className="flex flex-col sm:flex-row sm:-mx-3 p-6">
           <div className="flex-1 px-3">
             <Card className="mb-8 bg-white">
               <p className="m-6 p-6 w-32 m-auto">
@@ -85,7 +83,45 @@ export default () => (
       </div>
     </section>
     <SplitSection
-      id="services"
+      reverseOrder
+      primarySlot={
+        <div className="lg:pr-32 xl:pr-48">
+          <h3 className="text-3xl font-semibold leading-tight">Why Skillbot?</h3>
+          <p className="mt-8 text-xl font-light leading-relaxed">
+            Because you are ready for next step and you don’t want anything to your way. We will ensure that up skilling is enhanced through pedagogies informed by research ,best practice, and is refreshed through continual industry relevant experiential learning.
+          </p>
+        </div>
+      }
+      secondarySlot={
+        <div className="mr-24">
+          <p className="mt-8 lg:text-3xl text-2xl font-semibold text-teal-700 text-center italic leading-relaxed">
+            “Skillbot education is the passport to future and tomorrow belongs to you if you prepare yourself today”
+          </p>
+        </div>
+      }
+    />
+    <section className="pt-10 pb-16 lg:pb-10 lg:pt-10 bg-primary-lighter">
+      <div className="container mx-auto text-center">
+        <h2 className="text-3xl lg:text-5xl font-semibold">Our Vision</h2>
+        <div className="mt-2 p-6 sm:p-6 text-lg xl:text-2xl text-left">
+          <ul className="list-disc ml-4 p-6 text-justify">
+            <li className="mb-4">
+              We want to touch every life by empowering everyone with right blend of engineering, management and behavioral skillset with holistic approach and by continuous development.
+            </li>
+            <li className="mb-4">
+              Drive world-class learning and knowledge creation through research-enhanced education.
+            </li>
+            <li className="mb-4">
+              Expand learning opportunities through flexing the curriculum and increasing access to co-curricular and skill development  activities.
+            </li>
+            <li className="mb-4">
+              Develop students’ skills, attributes and motivation to set them up for success – both at the during college and after they graduate.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <SplitSection
       primarySlot={
         <div className="lg:pr-32 xl:pr-48">
           <h3 className="text-3xl font-semibold leading-tight">Workshops, Courses and Internships</h3>
@@ -94,7 +130,7 @@ export default () => (
           </p>
         </div>
       }
-      secondarySlot={<Workshops/>}
+      secondarySlot={<Workshops />}
     />
     <SplitSection
       reverseOrder
@@ -124,9 +160,9 @@ export default () => (
       secondarySlot={<Marketing/>}
     />
     <section className="mx-auto py-24 bg-gray-200 rounded-lg text-center shadow">
-      <h3 className="text-2xl font-semibold">Find out more about Skillbot</h3>
+      <h3 className="text-2xl font-semibold">Find out more about services offered by Skillbot</h3>
       <p className="mt-8">
-        <Button className="rounded-full" size="xl" toPage="/about">About</Button>
+        <Button className="rounded-full" size="xl" toPage="/services">Services</Button>
       </p>
     </section>
   </Layout>

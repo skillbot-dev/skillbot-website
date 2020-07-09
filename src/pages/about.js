@@ -26,7 +26,7 @@ const About = () => {
                                 file(relativePath: {eq: "vaishnavee_manaay_founder.png"}) {
                                     childImageSharp{
                                         fluid{
-                                            ...GatsbyImageSharpFluid
+                                            ...GatsbyImageSharpFluid_withWebp_tracedSVG
                                         }
                                     }
                                 }
@@ -51,13 +51,13 @@ const About = () => {
                             </p><br />
                             <p>
                                 Besides academics and administration, she is also an entrepreneur. Her passion for providing a natural and fun-learning
-                                environment for young children, has led to introducing the concept of kids’ activity farm in Bangalore. “I feel the strong need to
+                                environment for young children, has led to introducing the concept of kids’ activity farm in Bangalore. Mrs. Vaishnavee quotes <span className="font-bold italic">"I feel the strong need to
                                 make our children aware about farming and challenges faced by our farmer community. As a result of this urge, I have
-                                started “The Big Barn farm”.
+                                started “The Big Barn farm”.</span>
                             </p><br />
                             <p>
-                                Her ability in logical planning, systematic thinking along with creativity and compassion for education has led her to start “ Skill
-                                Bot”. Skill Bot aims to help Higher Education Institutions create a talent transformation pathway. This training consultancy will
+                                Her ability in logical planning, systematic thinking along with creativity and compassion for education have led her to start <span className="font-bold italic">“Skill
+                                Bot”</span>. Skill Bot aims to help Higher Education Institutions create a talent transformation pathway. This training consultancy will
                                 enable a more agile, employable and adaptable mindset amongst students and recruiters.
                             </p><br />
                             <p>

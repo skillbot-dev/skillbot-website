@@ -9,6 +9,13 @@ exports.createPages = async ({ graphql, actions: { createPage }}) => {
                     }
                 }
             }
+            allServicesJson {
+                edges{
+                    node{
+                        slug
+                    }
+                }
+            }
         }
     `)
 
@@ -23,6 +30,16 @@ exports.createPages = async ({ graphql, actions: { createPage }}) => {
             component: require.resolve("./src/templates/InternshipTemplate.js"),
             context: {
                 slug: internship.node.slug
+            }
+        })
+    });
+
+    data.data.allServicesJson.edges.forEach(service => {
+        createPage({
+            path:  `/services/${service.node.slug}/`,
+            component: require.resolve("./src/templates/ServiceTemplate.js"),
+            context: {
+                slug: service.node.slug
             }
         })
     });
