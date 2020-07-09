@@ -126,7 +126,7 @@ export default () => (
         <div className="lg:pr-32 xl:pr-48">
           <h3 className="text-3xl font-semibold leading-tight text-left">Workshops, Courses and Internships</h3>
           <p className="mt-8 text-xl font-light leading-relaxed">
-            We will facilitate better understanding of industry need through, Skill Development Workshops, Faculty Development Workshops, Internships and Industry opportunities to acquaint students and faculty members with the ever-evolving requirements and adapt to the challenges of the real world.
+            We facilitate better understanding of industry need through, Skill Development Workshops, Faculty Development Workshops, Internships and Industry opportunities to acquaint students and faculty members with the ever-evolving requirements and adapt to the challenges of the real world.
           </p>
         </div>
       }
@@ -153,7 +153,7 @@ export default () => (
             Data Analysis and Performance Optimzation
           </h3>
           <p className="mt-8 text-xl font-light leading-relaxed">
-            We monitor and analyse on the most recent trends in the industry and provide insight to students and educational institutions to achieve our main goal of talent transformation.
+            We monitor and analyse the most recent trends in the industry and provide insight to students and educational institutions to achieve our main goal of talent transformation.
           </p>
         </div>
       }

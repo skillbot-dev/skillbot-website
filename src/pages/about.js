@@ -46,8 +46,8 @@ const About = () => {
                                 As an entrepreneur, academic administrator, and academician, Vaishnavee dons multiple roles. She is actively involved in the
                                 administration of BNM Institute of Technology, a reputed institution in Bangalore. Her concerted efforts are focused towards
                                 developing collaborative, proactive, and inclusive tactical processes in Higher Education Institutions. Along with administration,
-                                her passion for academics and teaching is evident in her regular teaching assignments at BNMIT. Her down to earth nature
-                                makes her very approachable to her colleagues and staff alike.
+                                her passion for academics and teaching is evident in her regular teaching assignments at BNMIT. She owes her enterprising outlook to her education from 
+                                Indian Institute of Management, Bangalore.
                             </p><br />
                             <p>
                                 Besides academics and administration, she is also an entrepreneur. Her passion for providing a natural and fun-learning
