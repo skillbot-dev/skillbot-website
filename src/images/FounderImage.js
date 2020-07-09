@@ -1,1 +1,0 @@
-import FounderImager from './vaishnavee_maanay_'

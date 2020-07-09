@@ -56,7 +56,7 @@ const InternshipTemplate = ({ data }) => {
                         <p className="font-montserrat mt-4 text-3xl lg:text-4xl font-light">
                             {internship.registrationFee}
                         </p>
-                        <div className="mt-2 md:mt-6 text-xl font-bold font-raleway">
+                        <div className="mt-4 md:mt-6 text-xl font-bold font-raleway">
                             <a className="bg-primary-darker hover:text-primary rounded-full text-center text-white text-xl px-16 py-4" href={internship.registrationLink}>Register</a>
                         </div>
                     </div>
@@ -66,7 +66,7 @@ const InternshipTemplate = ({ data }) => {
                 </div>
             </section>
             <section className="pt-10 pb-16 lg:pb-10 lg:pt-10 bg-gray-100">
-                <div className="container mx-auto pl-10 flex-col text-center">
+                <div className="container mx-auto pl-10 text-center">
                     <h2 className="w-full text-2xl mb-4 lg:text-2xl font-semibold">Key Features</h2>
                     <div className="mx-auto text-xl w-3/4">
                         <ul className="list-disc text-left text-lg lg:text-xl">
@@ -81,7 +81,7 @@ const InternshipTemplate = ({ data }) => {
                 </div>
             </section>
             <section className="pt-10 pb-16 lg:pb-10 lg:pt-10 bg-primary-lighter">
-                <div className="container mx-auto pl-10 flex-col text-center">
+                <div className="container mx-auto pl-10 text-center">
                     <h2 className="w-full text-2xl mb-4 lg:text-2xl font-semibold">Topics Covered</h2>
                     <div className="mx-auto text-xl w-3/4">
                         <ul className="list-disc text-left text-lg lg:text-xl">
@@ -95,8 +95,8 @@ const InternshipTemplate = ({ data }) => {
                 </div>
             </section>
             <section id="what" className="mt-25 pt-10 lg:pb-20 lg:pt-20 bg-gray-100">
-                <div className="container mx-auto text-center">
-                    <h2 className="text-3xl lg:text-3xl font-semibold">Contact</h2>
+                <div className="container justify center mx-auto text-center">
+                    <h2 className="text-3xl lg:text-3xl font-semibold">Contact and Payment Information</h2>
                     <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
                         <div className="flex-1 px-3">
                             <Card className="mb-8 bg-white">
@@ -111,6 +111,20 @@ const InternshipTemplate = ({ data }) => {
                                 <p className="font-semibold text-xl">{internship.contact_2.name}</p>
                                 <p className="mt-4">
                                     {internship.contact_2.phone}
+                                </p>
+                            </Card>
+                        </div>
+                    </div>
+                    <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
+                        <div className="flex-1 px-3">
+                            <Card className="mb-8 bg-white">
+                                <p className="font-semibold text-xl">Bank Account Details</p>
+                                <p className="mt-4">
+                                    Name : Skillbot <br />
+                                    Current Account Number : 1147201001632<br />
+                                    Bank Name : Canara Bank<br />
+                                    Branch IFSC : CNRB0001147<br />
+                                    Branch Address : Banashankari 2nd Stage, Bengaluru, 560-070<br />
                                 </p>
                             </Card>
                         </div>

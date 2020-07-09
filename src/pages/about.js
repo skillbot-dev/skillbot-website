@@ -2,7 +2,6 @@ import React from 'react'
 import Layout from '../components/layout/Layout'
 import { grapql, StaticQuery } from 'gatsby'
 import Image from 'gatsby-image'
-
 const About = () => {
     return (
         <Layout>
