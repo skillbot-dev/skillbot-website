@@ -106,7 +106,7 @@ export default () => (
         <div className="mt-2 p-6 sm:p-6 text-lg xl:text-2xl text-left">
           <ul className="list-disc ml-4 p-6 text-justify">
             <li className="mb-4">
-              Touch lives by empowering everyone with the right blend of engineering, management and behavioral skillset through holistic approach and by continuous development.
+              Touch lives by empowering everyone with the right blend of engineering, management and behavioral skillset through holistic approach and continuous development.
             </li>
             <li className="mb-4">
               Drive world-class learning and knowledge creation through research-enhanced education.
