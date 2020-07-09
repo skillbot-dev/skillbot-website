@@ -88,7 +88,7 @@ export default () => (
         <div className="">
           <h3 className="text-3xl font-semibold leading-tight">Why Skillbot?</h3>
           <p className="mt-8 text-xl font-light leading-relaxed text-justify">
-            Because you are ready for the next step and you don’t want anything to hinder your way. We will ensure that up skilling is enhanced through pedagogies informed by research ,best practice, and is reinforced through continual industry relevant experiential learning.
+            Because you are ready for the next step and you don’t want anything to hinder your way. We will ensure that up skilling is enhanced through pedagogies, informed research, best practices and, reinforced through continual industry relevant experiential learning.
           </p>
         </div>
       }
@@ -106,7 +106,7 @@ export default () => (
         <div className="mt-2 p-6 sm:p-6 text-lg xl:text-2xl text-left">
           <ul className="list-disc ml-4 p-6 text-justify">
             <li className="mb-4">
-              Touch lives by empowering everyone with the right blend of engineering, management and behavioral skillset through a holistic approach and by continuous development.
+              Touch lives by empowering everyone with the right blend of engineering, management and behavioral skillset through holistic approach and by continuous development.
             </li>
             <li className="mb-4">
               Drive world-class learning and knowledge creation through research-enhanced education.
