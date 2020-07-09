@@ -23,7 +23,7 @@ const Header = () => (
               				`
 						}
 						render = {(data) => (
-							<Image fluid={data.file.childImageSharp.fluid} alt="Logo" loading={"lazy"} />
+							<Image fluid={data.file.childImageSharp.fluid} alt="Logo" loading={"eager"} />
 						)}
 					/>
 				</div>
