@@ -15,7 +15,7 @@ const Header = () => (
 									file (relativePath : { eq : "skillbot_logo.png" }){
 										childImageSharp{
 											fluid{
-												...GatsbyImageSharpFluid_withWebp_tracedSVG
+												...GatsbyImageSharpFluid_withWebp
 											}
 										}
 									}
