@@ -1,19 +1,17 @@
 import React from 'react';
 import Button from '../components/Button';
 import Card from '../components/Card';
-import { Link } from 'gatsby'
-import CustomerCard from '../components/CustomerCard';
-import LabelText from '../components/LabelText';
 import Layout from '../components/layout/Layout';
 import SplitSection from '../components/SplitSection';
-import StatsBox from '../components/StatsBox';
-import customerData from '../data/customer-data';
+import SEO from '../components/SEO'
+
 
 import { HeroImage, Workshops, GlobalOrientation, Marketing } from '../svg/SvgImages'
 import { ProactiveIcon, InclusiveIcon, CollaborativeIcon } from '../svg/Motifs' 
 
 export default () => (
   <Layout>
+    <SEO title={"Home"} />
     <section className="pt-10 md:pt-18 pb-18 md:pb-18">
       <div className="container mx-auto px-8 lg:flex items-center">
         <div className="lg:mt-12 text-center lg:text-left lg:w-1/2">

@@ -4,10 +4,11 @@ import Layout from '../components/layout/Layout';
 import SplitSection from '../components/SplitSection';
 import Image from 'gatsby-image'
 import { graphql, StaticQuery } from 'gatsby'
-
+import SEO from '../components/SEO'
 const Internships = ({ data }) => {
     return (
         <Layout>
+            <SEO title={"Internships"} />
             <section className="pt-10 md:pt-20 pb-10 md:pb-20">
                 <div className="container mx-auto px-8">
                     <div className="mx-auto text-center lg:text-left">

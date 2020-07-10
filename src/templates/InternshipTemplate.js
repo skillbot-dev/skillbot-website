@@ -4,7 +4,7 @@ import Image from 'gatsby-image'
 import Layout from "../components/layout/Layout"
 import Card from "../components/Card"
 import {SocialIcon} from "react-social-icons"
-
+import SEO from '../components/SEO'
 export const query = graphql`
     query( $slug: String! ) {
         internshipsJson(slug: { eq: $slug }){
@@ -44,6 +44,7 @@ const InternshipTemplate = ({ data }) => {
     const internship = data.internshipsJson
     return (
         <Layout>
+            <SEO title={`${internship.title}`}/>
             <section className="pt-10 md:pt-20 pb-20 md:pb-20">
                 <div className="container justify-center mx-auto px-10 lg:flex">
                     <div className="lg:mt-10 text-center lg:text-left lg:w-1/2">

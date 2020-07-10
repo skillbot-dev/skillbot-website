@@ -1,5 +1,24 @@
 module.exports = {
+  siteMetadata : {
+    title : 'Skillbot : Education Strategy',
+    description : 'Skillbot : Education Strategy is an education strategy firm, which aims to develop students in professional practice or research',
+    siteUrl: 'https://www.skillbot.info',
+    social :{
+      linkedin : 'https://linkedin.com/company/skillbot',
+      google: 'info.skillbot@gmail.com'
+    }
+  },
   plugins: [
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "Skillbot:Education Strategy",
+        short_name: "Skillbot",
+        start_url: "/",
+        display: "standalone",
+        icon: "./src/images/icon.png"
+      }
+    },
     {
       resolve: `gatsby-theme-codebushi`,
       options: {
@@ -23,5 +42,7 @@ module.exports = {
     `gatsby-transformer-json`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-netlify`,
+    `gatsby-plugin-react-helmet`
   ]
 };

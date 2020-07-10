@@ -2,9 +2,11 @@ import React from 'react'
 import Layout from '../components/layout/Layout'
 import { grapql, StaticQuery } from 'gatsby'
 import Image from 'gatsby-image'
+import SEO from '../components/SEO'
 const About = () => {
     return (
         <Layout>
+            <SEO title={"About"} />
             <section className="pt-10 md:pt-20 pb-10 md:pb-10">
                 <div className="container mx-auto px-8">
                     <div className="mx-auto text-center lg:text-left">
