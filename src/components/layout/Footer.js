@@ -60,14 +60,13 @@ const Footer = () => (
 							<a className="text-lg text-white" href="https://linkedin.com/company/skillbot">LinkedIn</a>
 						</li>
 						<li>
-							<SocialIcon style={{ height: '30px', width: '30px' }} className="mr-2" bgColor="white" url="mailto:scill.bott@gmail.com" />
-							<a className="text-lg text-white" href="https://linkedin.com/company/skillbot">scill.bott@gmail.com</a>
+							<SocialIcon style={{ height: '30px', width: '30px' }} className="mr-2" bgColor="white" url="mailto:info.skillbot@gmail.com" />
+							<a className="text-lg text-white" href="">info.skillbot@gmail.com</a>
 						</li>
 					</ul>
 				</div>
 				<div className="w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 px-3 p-6">
 					<h2 className="text-lg font-semibold">©Copyrights Skillbot 2020-2021</h2>
-					<p className="mt-5">Website designed and developed by Srigovind Nayak</p>
 				</div>
 			</div>
 		</div>

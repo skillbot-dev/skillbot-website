@@ -11,11 +11,13 @@
     "image": "./images/data-science.png",
     "contact_1": {
       "name": "Dr.Sejal Santosh Nimbhorkar",
-      "phone": "+91 96110 82624"
+      "phone": "+91 96110 82624",
+      "linkedin": "https://www.linkedin.com/in/sejal-nimbhorkar"
     },
     "contact_2": {
       "name": "Prof. Preetham B",
-      "phone": "+91 99003 45682"
+      "phone": "+91 99003 45682",
+      "linkedin": "https://www.linkedin.com/in/preetham-gowda-a4a832125/"
     },
     "topics_covered":[
       "Introduction to Data Science",
@@ -53,11 +55,13 @@
     "image": "./images/digital-image-processing.png",
     "contact_1": {
       "name": "Dr.Saritha Chakrasali",
-      "phone": "+91 99450 35647"
+      "phone": "+91 99450 35647",
+      "linkedin": "https://www.linkedin.com/in/saritha-chakrasali"
     },
     "contact_2": {
       "name": "Prof. Harini S",
-      "phone": "+91 90080 41480"
+      "phone": "+91 90080 41480",
+      "linkedin": "https://www.linkedin.com/in/harini-s-5118491b/"
     },
     "topics_covered": [
       "Introduction to Image Processing",
@@ -95,11 +99,13 @@
     "image": "./images/vlsi-design.png",
     "contact_1": {
       "name": "Dr.Veena S Chakravarthi",
-      "phone": "+91 98459 80607"
+      "phone": "+91 98459 80607",
+      "linkedin": "https://www.linkedin.com/in/veenasc"
     },
     "contact_2": {
       "name": "Dr. Yasha Jyothi M Shirur",
-      "phone": "+91 94484 31932"
+      "phone": "+91 94484 31932",
+      "linkedin": "https://www.linkedin.com/in/yasha-jyothi-m-shirur"
     },"topics_covered": [
       "Fundamentals of VLSI Design",
       "Formulate and Translate real-life statements to Design Specification",

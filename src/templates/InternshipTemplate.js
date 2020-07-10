@@ -3,6 +3,8 @@ import { graphql } from 'gatsby'
 import Image from 'gatsby-image'
 import Layout from "../components/layout/Layout"
 import Card from "../components/Card"
+import {SocialIcon} from "react-social-icons"
+
 export const query = graphql`
     query( $slug: String! ) {
         internshipsJson(slug: { eq: $slug }){
@@ -23,10 +25,12 @@ export const query = graphql`
             contact_1{
                 name
                 phone
+                linkedin
             }
             contact_2{
                 name
                 phone
+                linkedin
             }
             topics_covered
             key_features
@@ -100,7 +104,12 @@ const InternshipTemplate = ({ data }) => {
                     <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
                         <div className="flex-1 px-3">
                             <Card className="mb-8 bg-white">
-                                <p className="font-semibold text-xl">{internship.contact_1.name}</p>
+                                <p className="font-semibold text-xl">
+                                    <a className="text-gray-800" href={internship.contact_1.linkedin}>{internship.contact_1.name}</a>
+                                    <span>
+                                        <SocialIcon style={{ height: '25px', width: '25px' }} className="ml-2 mr-2 p-2" bgColor="teal" url={internship.contact_1.linkedin} />
+                                    </span>
+                                </p>
                                 <p className="mt-2 text-md">
                                     Consultant, Skillbot
                                 </p>
@@ -111,9 +120,14 @@ const InternshipTemplate = ({ data }) => {
                         </div>
                         <div className="flex-1 px-3">
                             <Card className="mb-8 bg-white">
-                                <p className="font-semibold text-xl">{internship.contact_2.name}</p>
+                                <p className="font-semibold text-xl">
+                                    <a className="text-gray-800" href={internship.contact_2.linkedin}>{internship.contact_2.name}</a>
+                                    <span>
+                                        <SocialIcon style={{ height: '25px', width: '25px' }} className="ml-2 mr-2 p-2" bgColor="teal" url={internship.contact_2.linkedin} />
+                                    </span>
+                                </p>
                                 <p className="mt-2 text-md">
-                                    Consultant, Skillbot
+                                    Consultant, Skillbot 
                                 </p>
                                 <p className="mt-4 text-lg font-bold">
                                     {internship.contact_2.phone}
