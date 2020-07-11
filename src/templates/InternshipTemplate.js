@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 import Image from 'gatsby-image'
 import Layout from "../components/layout/Layout"
 import Card from "../components/Card"
-import {SocialIcon} from "react-social-icons"
+import { SocialIcon } from "react-social-icons"
 import SEO from '../components/SEO'
 export const query = graphql`
     query( $slug: String! ) {
@@ -22,12 +22,7 @@ export const query = graphql`
                     }
                 }
             }
-            contact_1{
-                name
-                phone
-                linkedin
-            }
-            contact_2{
+            contact{
                 name
                 phone
                 linkedin
@@ -44,14 +39,14 @@ const InternshipTemplate = ({ data }) => {
     const internship = data.internshipsJson
     return (
         <Layout>
-            <SEO title={`${internship.title}`}/>
+            <SEO title={`${internship.title}`} />
             <section className="pt-10 md:pt-20 pb-20 md:pb-20">
                 <div className="container justify-center mx-auto px-10 lg:flex">
                     <div className="lg:mt-10 text-center lg:text-left lg:w-1/2">
-                        <h1 className="text-6xl lg:text-6xl xl:text-6xl font-raleway font-bold leading-none">
+                        <h1 className="text-4xl lg:text-6xl xl:text-6xl font-raleway font-bold leading-none">
                             {internship.title}
                         </h1>
-                        <p className="mt-6 text-gray-600 font-montserrat">Sponsored by : {internship.sponsoredBy}</p>     
+                        <p className="mt-6 text-gray-600 font-montserrat">Sponsored by : {internship.sponsoredBy}</p>
                         <p className="font-montserrat text-3xl lg:text-4xl mt-2 font-light">
                             {internship.position}
                         </p>
@@ -70,7 +65,7 @@ const InternshipTemplate = ({ data }) => {
                     </div>
                 </div>
             </section>
-            <section className="mt-16 pt-10 pb-16 lg:pb-10 lg:pt-10 bg-gray-100">
+            <section className="mt-16 pt-10 pb-16 lg:pb-10 lg:pt-10 bg-gray-100 font-montserrat">
                 <div className="container mx-auto text-center">
                     <h2 className="text-3xl lg:text-5xl font-semibold">Key Features</h2>
                     <div className="mt-2 p-6 sm:p-6 text-lg xl:text-3xl text-left">
@@ -85,7 +80,7 @@ const InternshipTemplate = ({ data }) => {
                     </div>
                 </div>
             </section>
-            <section className="pt-10 pb-16 lg:pb-10 lg:pt-10 bg-primary-lighter">
+            <section className="pt-10 pb-16 lg:pb-10 lg:pt-10 bg-primary-lighter font-montserrat">
                 <div className="container mx-auto text-center">
                     <h2 className="text-3xl lg:text-5xl font-semibold">Topics Covered</h2>
                     <div className="mt-2 p-6 sm:p-6 text-lg xl:text-3xl text-left">
@@ -101,40 +96,26 @@ const InternshipTemplate = ({ data }) => {
             </section>
             <section id="what" className="mt-25 pt-10 lg:pb-20 lg:pt-20 bg-gray-100">
                 <div className="container justify center mx-auto text-center">
-                    <h2 className="text-3xl lg:text-3xl font-semibold">Contact and Payment Information</h2>
-                    <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
-                        <div className="flex-1 px-3">
-                            <Card className="mb-8 bg-white">
-                                <p className="font-semibold text-xl">
-                                    <a className="text-gray-800" href={internship.contact_1.linkedin}>{internship.contact_1.name}</a>
-                                    <span>
-                                        <SocialIcon style={{ height: '25px', width: '25px' }} className="ml-2 mr-2 p-2" bgColor="teal" url={internship.contact_1.linkedin} />
-                                    </span>
-                                </p>
-                                <p className="mt-2 text-md">
-                                    Consultant, Skillbot
-                                </p>
-                                <p className="mt-4 text-lg font-bold">
-                                    {internship.contact_1.phone}
-                                </p>
-                            </Card>
-                        </div>
-                        <div className="flex-1 px-3">
-                            <Card className="mb-8 bg-white">
-                                <p className="font-semibold text-xl">
-                                    <a className="text-gray-800" href={internship.contact_2.linkedin}>{internship.contact_2.name}</a>
-                                    <span>
-                                        <SocialIcon style={{ height: '25px', width: '25px' }} className="ml-2 mr-2 p-2" bgColor="teal" url={internship.contact_2.linkedin} />
-                                    </span>
-                                </p>
-                                <p className="mt-2 text-md">
-                                    Consultant, Skillbot 
-                                </p>
-                                <p className="mt-4 text-lg font-bold">
-                                    {internship.contact_2.phone}
-                                </p>
-                            </Card>
-                        </div>
+                    <h2 className="text-lg md:text-2xl lg:text-3xl font-semibold">Contact and Payment Information</h2>
+                    <div className="flex-none flex-wrap items-center justify-center sm:-mx-3 mt-12">
+                        {
+                            internship.contact.map((person,i) => (
+                                <div key={i} className="px-3">
+                                    <Card className="mb-8 bg-white">
+                                        <p className="font-semibold text-xl">
+                                            <a className="text-gray-800" href={person.linkedin}>{person.name}</a>
+                                        </p>
+                                        <SocialIcon style={{ height: '25px', width: '25px' }} className="ml-2 mr-2 p-2" bgColor="teal" url={person.linkedin} />
+                                        <p className="mt-2 text-md">
+                                            Consultant, Skillbot
+                                    </p>
+                                        <p className="mt-4 text-lg font-bold">
+                                            {person.phone}
+                                        </p>
+                                    </Card>
+                                </div>
+                            ))
+                        }
                     </div>
                     <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
                         <div className="flex-1 px-3">

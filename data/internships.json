@@ -1,25 +1,27 @@
 [
   {
-    "slug":"data-science-with-python",
+    "slug": "data-science-with-python",
     "title": "Data Science using Python",
-    "sponsoredBy":"BNM Institute of Technology",
+    "sponsoredBy": "BNM Institute of Technology",
     "startDate": "13th July, 2020",
     "duration": "4 weeks",
-    "timings":"9:00am to 1:00pm",
-    "registrationFee": "Rs.2000", 
+    "timings": "9:00am to 1:00pm",
+    "registrationFee": "Rs.2000",
     "registrationLink": "https://forms.gle/pBk1q5dQEW3dizTX9",
     "image": "./images/data-science.png",
-    "contact_1": {
-      "name": "Dr.Sejal Santosh Nimbhorkar",
-      "phone": "+91 96110 82624",
-      "linkedin": "https://www.linkedin.com/in/sejal-nimbhorkar"
-    },
-    "contact_2": {
-      "name": "Prof. Preetham B",
-      "phone": "+91 99003 45682",
-      "linkedin": "https://www.linkedin.com/in/preetham-gowda-a4a832125/"
-    },
-    "topics_covered":[
+    "contact": [
+      {
+        "name": "Dr. Sejal Santosh Nimbhorkar",
+        "phone": "+91 96110 82624",
+        "linkedin": "https://www.linkedin.com/in/sejal-nimbhorkar"
+      },
+      {
+        "name": "Prof. Preetham B",
+        "phone": "+91 99003 45682",
+        "linkedin": "https://www.linkedin.com/in/preetham-gowda-a4a832125/"
+      }
+    ],
+    "topics_covered": [
       "Introduction to Data Science",
       "Visualization of Data",
       "Statistical Foundation in Data Science",
@@ -32,37 +34,38 @@
       "Text Summarization",
       "Introduction to Business Intelligence and Big Data"
     ],
-    "key_features":[
+    "key_features": [
       "Inexpensive Course on the Fundamentals of Data Science",
       "Internship Experience with Skillbot : Education Strategy",
       "Course Delivered by Expert Data Scientists",
       "Top 10 students/interns will be guided to publish papers in reputed journals",
       "A full-fledged data science project"
     ],
-    "position":"Data Science Intern",
+    "position": "Data Science Intern",
     "career_prospects": "Data Scientist, Data Analyst, Data Engineer, AI Engineer, ML Engineer"
   },
-
   {
-    "slug":"digitial-image-processing",
+    "slug": "digitial-image-processing",
     "title": "Digital Image Processing",
-    "sponsoredBy" : "BNM Institute of Technology",
+    "sponsoredBy": "BNM Institute of Technology",
     "startDate": "13th July, 2020",
     "duration": "4 weeks",
     "timings": "3:00pm to 7:00pm",
     "registrationFee": "Rs.2000",
     "registrationLink": "https://forms.gle/kTbUrpBz9hSTs8iv6",
     "image": "./images/digital-image-processing.png",
-    "contact_1": {
-      "name": "Dr.Saritha Chakrasali",
-      "phone": "+91 99450 35647",
-      "linkedin": "https://www.linkedin.com/in/saritha-chakrasali"
-    },
-    "contact_2": {
-      "name": "Prof. Harini S",
-      "phone": "+91 90080 41480",
-      "linkedin": "https://www.linkedin.com/in/harini-s-5118491b/"
-    },
+    "contact": [
+      {
+        "name": "Dr. Saritha Chakrasali",
+        "phone": "+91 99450 35647",
+        "linkedin": "https://www.linkedin.com/in/saritha-chakrasali"
+      },
+      {
+        "name": "Prof. Harini S",
+        "phone": "+91 90080 41480",
+        "linkedin": "https://www.linkedin.com/in/harini-s-5118491b/"
+      }
+    ],
     "topics_covered": [
       "Introduction to Image Processing",
       "The MATLAB computing Environment",
@@ -84,29 +87,31 @@
       "Top 5 students get assistance to publish a papers in reputed journals"
     ],
     "position": "Digital Image Processing Intern",
-    "career_prospects":"Image Processing Engineers in fields of science, engineering, defence, manufacturing, agriculture, medicine etc."
+    "career_prospects": "Image Processing Engineers in fields of science, engineering, defence, manufacturing, agriculture, medicine etc."
   },
-
   {
-    "slug":"vlsi-design",
+    "slug": "vlsi-design",
     "title": "VLSI Design and Verification",
-    "sponsoredBy" : "Project Bhageerathi",
-    "startDate" : "13th July, 2020",
-    "duration" : "4 weeks",
+    "sponsoredBy": "Project Bhageerathi",
+    "startDate": "13th July, 2020",
+    "duration": "4 weeks",
     "timings": "9:00am to 1:00pm",
-    "registrationFee" : "Rs.2000",
+    "registrationFee": "Rs.2000",
     "registrationLink": "https://forms.gle/yWvx4zHHed5Qoxc79",
     "image": "./images/vlsi-design.png",
-    "contact_1": {
-      "name": "Dr.Veena S Chakravarthi",
-      "phone": "+91 98459 80607",
-      "linkedin": "https://www.linkedin.com/in/veenasc"
-    },
-    "contact_2": {
-      "name": "Dr. Yasha Jyothi M Shirur",
-      "phone": "+91 94484 31932",
-      "linkedin": "https://www.linkedin.com/in/yasha-jyothi-m-shirur"
-    },"topics_covered": [
+    "contact": [
+      {
+        "name": "Dr. Veena S Chakravarthi",
+        "phone": "+91 98459 80607",
+        "linkedin": "https://www.linkedin.com/in/veenasc"
+      },
+      {
+        "name": "Dr. Yasha Jyothi M Shirur",
+        "phone": "+91 94484 31932",
+        "linkedin": "https://www.linkedin.com/in/yasha-jyothi-m-shirur"
+      }
+    ],
+    "topics_covered": [
       "Fundamentals of VLSI Design",
       "Formulate and Translate real-life statements to Design Specification",
       "Logic Design from Specification",
@@ -123,5 +128,56 @@
     ],
     "position": "VLSI Design Intern",
     "career_prospects": "VLSI Design Engineer, VLSI Design Verification Engineer in VLSI Design Centres"
+  },
+  {
+    "slug": "ev-technology-using-matlab",
+    "title": "Power Electronic Converter Design for EV Technology Using MATLAB",
+    "sponsoredBy": "BNM Institute of Technology",
+    "startDate": "20th July, 2020",
+    "duration": "4 weeks",
+    "timings": "10:00am to 1:00pm (Monday to Friday)",
+    "registrationFee": "Rs.1000",
+    "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLSftRsmKbdH0j1BhaX3D8a2-WxTDQARZwdbBQjFM14ewr3rwkg/viewform?usp=sf_link",
+    "image": "./images/ev-design.png",
+    "contact": [
+      {
+        "name": "Dr. Venkatesha K",
+        "phone": "+91 98456 11804",
+        "linkedin": "linkedin.com/in/venkatesha-reddy-b17b42150/"
+      },
+      {
+        "name": "Dr. Priyashree S",
+        "phone": "+91 99459 76556",
+        "linkedin": "https://www.linkedin.com/in/dr-priyashree-sridhar-54587516/"
+      },
+      {
+        "name": "Dr. Madhu S",
+        "phone": "+91 98864 96914",
+        "linkedin": "https://www.linkedin.com/in/madhu-ravi-9b4b8264/"
+      }
+    ],
+    "topics_covered": [
+      "Introduction to MATLAB Coding",
+      "Introduction to Simulation, Challenges and its Applications",
+      "Applications of MATLAB to Power Engineering",
+      "Modeling and Simulation of Non-Linear Loads",
+      "Power Quality Mitigation Techniques",
+      "Power Quality Analysis of Electrical System",
+      "DSP Controllers for Motor Drives",
+      "Introduction to AI techniques for Electrical Technology",
+      "Simulation of Power Electronic Converters",
+      "Role of Power Electronics in EV Technology",
+      "Electric Vehicle Technology",
+      "Smart Battery charging Technology and Battery Management Systems"
+    ],
+    "key_features": [
+      "Inexpensive Course on Power Electronic Technology",
+      "Course delivered by experts",
+      "Internship at Skillbot : Education Strategies",
+      "Top 5 students will get assistance for their final-year project",
+      "Hands on learning"
+    ],
+    "position": "Power Electronics Engineering Intern",
+    "career_prospects": "Power Delivery Engineer, Power Electronics Design Engineer, Safety Engineer for Power Electronics, Power Electronics Engineer"
   }
 ]

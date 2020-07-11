@@ -101,14 +101,15 @@ const Services = ({ data }) => {
                 render={data => (
                     data.allServicesJson.edges.map((service, i) => (
                         <SplitSection
+                            key = {i}
                             reverseOrder={i % 2 == 0}
                             primarySlot={
                                 <div className="text-center lg:text-left md:p-10 xl:text-left xl:p-20">
                                     <h3 className="text-3xl font-semibold leading-tight">{service.node.title}</h3>
                                     <ul className="list-disc mt-6 ml-6 text-xl">
                                         {
-                                            service.node.features.map(feature => (
-                                                <li className="mb-4">{feature}</li>
+                                            service.node.features.map((feature,k) => (
+                                                <li key={k} className="mb-4">{feature}</li>
                                             ))
                                         }
                                     </ul>

@@ -43,6 +43,12 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-netlify`,
-    `gatsby-plugin-react-helmet`
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options:{
+        trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID || "none",
+      }
+    }
   ]
 };

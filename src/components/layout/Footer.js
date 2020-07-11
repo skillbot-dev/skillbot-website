@@ -30,22 +30,22 @@ const Footer = () => (
 				<div className="w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 px-3 p-6">
 					<h2 className="text-lg font-semibold">Site Navigation</h2>
 					<ul className="mt-4 leading-loose">
-						<li>
+						<li key={1}>
 							<Link to="/">
 								Home
         		  </Link>
 						</li>
-						<li>
-							<Link href="/about">
+						<li key={2}>
+							<Link to="/about">
 								About
         		</Link>
 						</li>
-						<li>
+						<li key={3}>
 							<Link to="/internships">
 								Internships
         		</Link>
 						</li>
-						<li>
+						<li key={4}>
 							<Link to="/services">
 								Services
         		</Link>
@@ -55,18 +55,18 @@ const Footer = () => (
 				<div className="w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 px-3 p-6">
 					<h2 className="text-lg font-semibold">Social Media & Contact</h2>
 					<ul className="mt-4 leading-loose">
-						<li>
+						<li key={1}>
 							<SocialIcon style={{ height: '30px', width: '30px' }} className="mr-2" bgColor="white" url="https://linkedin.com/company/skillbot" />
 							<a className="text-lg text-white" href="https://linkedin.com/company/skillbot">LinkedIn</a>
 						</li>
-						<li>
+						<li key={2}>
 							<SocialIcon style={{ height: '30px', width: '30px' }} className="mr-2" bgColor="white" url="mailto:info.skillbot@gmail.com" />
-							<a className="text-lg text-white" href="">info.skillbot@gmail.com</a>
+							<a className="text-lg text-white" href="mailto:info.skillbot@gmail.com">info.skillbot@gmail.com</a>
 						</li>
 					</ul>
 				</div>
 				<div className="w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 px-3 p-6">
-					<h2 className="text-lg font-semibold">©Copyrights Skillbot 2020-2021</h2>
+					<h2 className="text-lg font-semibold">©Copyrights Skillbot : Education Strategy 2020-2021</h2>
 				</div>
 			</div>
 		</div>

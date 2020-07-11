@@ -46,7 +46,7 @@ export default () => (
         <div className="flex flex-col sm:flex-row sm:-mx-3 p-6">
           <div className="flex-1 px-3">
             <Card className="mb-8 bg-white">
-              <p className="m-6 p-6 w-32 m-auto">
+              <p className="p-6 w-32 m-auto">
                 <ProactiveIcon />
               </p>
               <p className="font-semibold text-xl">Proactive</p>
@@ -57,7 +57,7 @@ export default () => (
           </div>
           <div className="flex-1 px-3">
             <Card className="mb-8 bg-white">
-              <p className="m-6 p-6 w-32 m-auto">
+              <p className="p-6 w-32 m-auto">
                 <InclusiveIcon />
               </p>
               <p className="font-semibold text-xl">Inclusive</p>
@@ -68,7 +68,7 @@ export default () => (
           </div>
           <div className="flex-1 px-3">
             <Card className="mb-8 bg-white">
-              <p className="m-6 p-6 w-32 m-auto">
+              <p className="p-6 w-32 m-auto">
                 <CollaborativeIcon />
               </p>
               <p className="font-semibold text-xl">Collaborative</p>
