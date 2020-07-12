@@ -12,7 +12,7 @@ const Header = () => {
 			<nav className="container mx-auto flex items-center justify-between flex-wrap p-6">
 				<div className="flex items-center flex-shrink-0 text-white mr-6">
 					<div className="md:w-48 lg:w-64 w-48">
-						<Link to="/">
+						<Link className="noSelect" to="/">
 							<StaticQuery
 								query={graphql
 									`
