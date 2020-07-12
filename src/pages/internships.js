@@ -52,7 +52,7 @@ const Internships = ({ data }) => {
                             key = {i}
                             reverseOrder={i % 2 == 0}
                             primarySlot={
-                                <div className="text-center lg:text-left md:p-10 xl:text-left xl:p-20">
+                                <div className="mx-10 my-10 text-center md:text-center lg:text-left xl:text-left">
                                     <h3 className="text-3xl font-semibold leading-tight">{internship.node.title}</h3>
                                     <p className="mt-8 text-xl font-light leading-relaxed mb-10">
                                         {internship.node.duration}<br />

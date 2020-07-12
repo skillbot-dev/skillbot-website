@@ -12,9 +12,10 @@ const Header = () => {
 			<nav className="container mx-auto flex items-center justify-between flex-wrap p-6">
 				<div className="flex items-center flex-shrink-0 text-white mr-6">
 					<div className="md:w-48 lg:w-64 w-48">
-						<StaticQuery
-							query={graphql
-								`
+						<Link to="/">
+							<StaticQuery
+								query={graphql
+									`
                 				query{
 									file (relativePath : { eq : "skillbot_logo.jpg" }){
 										childImageSharp{
@@ -25,11 +26,12 @@ const Header = () => {
 									}
 								}
               				`
-							}
-							render={(data) => (
-								<Image fluid={data.file.childImageSharp.fluid} alt="Logo" loading={"eager"} />
-							)}
-						/>
+								}
+								render={(data) => (
+									<Image fluid={data.file.childImageSharp.fluid} alt="Logo" loading={"eager"} />
+								)}
+							/>
+						</Link>
 					</div>
 				</div>
 				<div className="block lg:hidden">
