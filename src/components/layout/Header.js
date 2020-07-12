@@ -41,10 +41,10 @@ const Header = () => {
 				</div>
 				<div id="menu" className={`${navbarOpen ? `block` : `hidden`} w-full lg:text-right flex-grow lg:flex lg:items-center lg:w-auto`}>
 					<p className="text-sm lg:flex-grow">
-						<Link className="block mt-4 lg:inline-block lg:mt-0 text-lg text-teal-500 hover:text-teal-200 mr-2 px-2" to="/">Home</Link>
-						<Link className="block mt-4 lg:inline-block lg:mt-0 text-lg text-teal-500 hover:text-teal-200 mr-2 px-2" to="/about">About</Link>
-						<Link className="block mt-4 lg:inline-block lg:mt-0 text-lg text-teal-500 hover:text-teal-200 mr-2 px-2" to="/internships">Internships</Link>
-						<Link className="block mt-4 lg:inline-block lg:mt-0 text-lg text-teal-500 hover:text-teal-200 mr-2 px-2" to="/services">Services</Link>
+						<Link className="noSelect block mt-4 lg:inline-block lg:mt-0 text-lg text-teal-500 hover:text-teal-200 mr-2 px-2" to="/">Home</Link>
+						<Link className="noSelect block mt-4 lg:inline-block lg:mt-0 text-lg text-teal-500 hover:text-teal-200 mr-2 px-2" to="/about">About</Link>
+						<Link className="noSelect block mt-4 lg:inline-block lg:mt-0 text-lg text-teal-500 hover:text-teal-200 mr-2 px-2" to="/internships">Internships</Link>
+						<Link className="noSelect block mt-4 lg:inline-block lg:mt-0 text-lg text-teal-500 hover:text-teal-200 mr-2 px-2" to="/services">Services</Link>
 					</p>
 				</div>
 			</nav>
