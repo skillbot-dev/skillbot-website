@@ -3,7 +3,6 @@ import { graphql } from 'gatsby'
 import Image from 'gatsby-image'
 import Layout from "../components/layout/Layout"
 import Card from "../components/Card"
-import { SocialIcon } from "react-social-icons"
 import SEO from '../components/SEO'
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
 export const query = graphql`
