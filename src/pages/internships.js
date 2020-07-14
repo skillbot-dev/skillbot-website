@@ -23,48 +23,52 @@ const Internships = ({ data }) => {
             </section>
             <StaticQuery
                 query={graphql`
-                query{
-                    allInternshipsJson{
-                        edges{
-                            node{
-                                slug
-                                title
-                                sponsoredBy
-                                startDate
-                                duration
-                                registrationFee
-                                registrationLink
-                                image{
-                                    childImageSharp{
-                                        fluid{
-                                            ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                query {
+                    allMarkdownRemark {
+                        edges {
+                            node {
+                                fields{
+                                    slug
+                                }
+                                frontmatter {
+                                    title
+                                    duration
+                                    sponsor
+                                    title
+                                    start_date
+                                    image{
+                                        childImageSharp{
+                                            fluid{
+                                                ...GatsbyImageSharpFluid_withWebp
+                                            }
                                         }
                                     }
                                 }
-                            }
+                            }   
                         }
                     }
                 }
             `}
                 render={data => (
-                    data.allInternshipsJson.edges.map((internship, i) => (
+                    data.allMarkdownRemark.edges.map((internship, i) => (
                         <SplitSection
                             key = {i}
                             reverseOrder={i % 2 == 0}
                             primarySlot={
                                 <div className="mx-10 my-10 text-center md:text-center lg:text-left xl:text-left">
-                                    <h3 className="text-3xl font-semibold leading-tight">{internship.node.title}</h3>
+                                    <div>{console.log(internship)}</div>
+                                    <h3 className="text-3xl font-semibold leading-tight">{internship.node.frontmatter.title}</h3>
                                     <p className="mt-8 text-xl font-light leading-relaxed mb-10">
-                                        {internship.node.duration}<br />
-                                        Starting : {internship.node.startDate}<br />
-                                        Sponsored By : {internship.node.sponsoredBy}
+                                        {internship.node.frontmatter.duration}<br />
+                                        Starting : {internship.node.frontmatter.start_date}<br />
+                                        Sponsored By : {internship.node.frontmatter.sponsor}
                                     </p>
                                     <p className="mt-2 md:mt-6 text-lg lg:text-2xl xl:text-3xl font-bold font-raleway">
-                                        <Button className="rounded-full" size="lg" toPage={`/internships/${internship.node.slug}`}>Know More</Button>
+                                        <Button className="rounded-full" size="lg" toPage={`/internships${internship.node.fields.slug}`}>Know More</Button>
                                     </p>
                                 </div>
                             }
-                            secondarySlot={<Image fluid={internship.node.image.childImageSharp.fluid} alt={internship.node.slug} />}
+                            secondarySlot={<Image fluid={internship.node.frontmatter.image.childImageSharp.fluid} alt={internship.node.slug} />}
                         />
                     ))
                 )}

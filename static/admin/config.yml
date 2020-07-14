@@ -1,23 +1,46 @@
 backend:
   name: git-gateway
   branch: development
+  commit_messages:
+    create: 'Create {{collection}} “{{slug}}”'
+    update: 'Update {{collection}} “{{slug}}”'
+    delete: 'Delete {{collection}} “{{slug}}”'
+    uploadMedia: '[skip ci] Upload “{{path}}”'
+    deleteMedia: '[skip ci] Delete “{{path}}”'
+
+local_backend : true
 
 media_folder: static/images
-public_folder: /
+public_folder: /images
 
 collections:
   - name : "internships"
-    label : "Internships"
-    folder : "content/internships"
+    label : "Internship"
+    folder : "src/pages/internships"
     create : true
-    slug: 'index'
+    slug: '{{slug}}'
     media_folder: ''
     public_folder: ''
-    path: '{{title}}/index'
+    path: '{{slug}}/index'
     editor:
-      preview : false
+      preview : true
     fields:
+      - { label: 'Short Title', name: 'slug', widget: 'string' }
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Position Offered', name: 'work-position', widget: 'string' }
+      - { label: 'Career Prospects', name: 'career-prospects', widget: 'string', required: false }
+      - { label: 'Sponsored By', name: 'sponsor', widget: 'string' }
+      - { label: 'Start Date', name: 'start_date', widget: 'date', format: 'Do MMM YY'}
+      - { label: 'Duration', name: 'duration', widget: 'string' }
+      - { label: 'Registration Fee', name: 'registration_fee', widget: 'number' }
+      - { label: 'Registration Link', name: 'registration_link', widget: 'string' }
+      - { label: 'Image', name: 'image', widget: 'image' }
+      - { label: 'Key Features', name: 'key_features', widget: 'list', field: { label: "Feature", name: "feature", widget: 'string'}}
+      - { label: 'Topics Covered', name: 'topics_covered', widget: 'list', field: { label: "Topic", name: "topic", widget: 'string'}}
+      - label: 'Contacts'
+        name: 'contacts'
+        widget: 'list' 
+        fields: 
+          - { label: "Name", name: "contact_name", widget: 'string'}
+          - { label: "Phone", name: "phone_number", widget: 'string'}
+          - { label: "LinkedIn ID", name: "linkedin_url", widget: 'string'}
