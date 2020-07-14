@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata : {
     title : 'Skillbot : Education Strategy',
-    description : 'Skillbot : Education Strategy is an education strategy firm, which aims to develop students in professional practice or research',
+    description : 'Skillbot : Education Strategy is an education strategy firm from Bengaluru, which aims to develop students in professional practice or research',
     siteUrl: 'https://www.skillbot.info',
     social :{
       linkedin : 'https://linkedin.com/company/skillbot',
