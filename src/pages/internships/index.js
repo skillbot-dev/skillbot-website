@@ -3,8 +3,9 @@ import Button from '../../components/Button';
 import Layout from '../../components/layout/Layout';
 import SplitSection from '../../components/SplitSection';
 import Image from 'gatsby-image'
-import { graphql, StaticQuery } from 'gatsby'
+import { graphql } from 'gatsby'
 import SEO from '../../components/SEO'
+import StatusPill from '../../components/StatusPill'
 
 export const query = graphql`
     query {
@@ -20,6 +21,7 @@ export const query = graphql`
                         sponsor
                         title
                         start_date
+                        status
                         image{
                             childImageSharp{
                                 fluid{
@@ -34,6 +36,8 @@ export const query = graphql`
     }
 `
 
+
+
 const ListOfInternships = ({data}) => (
     <>
     {
@@ -42,20 +46,20 @@ const ListOfInternships = ({data}) => (
                 key={i}
                 reverseOrder={i % 2 == 0}
                 primarySlot={
-                    <div className="text-center md:text-center lg:text-left xl:text-left">
-                        <div>{console.log(internship)}</div>
+                    <div className="flex justify-center items-center lg:justify-start flex-wrap text-center md:text-center lg:text-left xl:text-left">
                         <h3 className="text-3xl font-semibold leading-tight">{internship.node.frontmatter.title}</h3>
-                        <p className="mt-8 text-xl font-light leading-relaxed mb-10">
+                        <StatusPill status = {internship.node.frontmatter.status} />
+                        <p className="mt-4 w-full text-xl font-light leading-relaxed mb-10">
                             {internship.node.frontmatter.duration}<br />
-                                        Starting : {internship.node.frontmatter.start_date}<br />
-                                        Sponsored By : {internship.node.frontmatter.sponsor}
+                            Starting : {internship.node.frontmatter.start_date}<br />
+                            Sponsored By : {internship.node.frontmatter.sponsor}
                         </p>
-                        <p className="mt-2 md:mt-6 text-lg lg:text-2xl xl:text-3xl font-bold font-raleway">
+                        <div className="mt-4 w-full md:mt-4 mb-6 text-lg lg:text-2xl xl:text-3xl font-bold font-raleway">
                             <Button className="rounded-full" size="lg" toPage={`${internship.node.fields.slug}`}>Know More</Button>
-                        </p>
+                        </div>
                     </div>
                 }
-                secondarySlot={<Image fluid={internship.node.frontmatter.image.childImageSharp.fluid} alt={internship.node.slug} />}
+                secondarySlot={<Image fluid={internship.node.frontmatter.image.childImageSharp.fluid} alt={internship.node.fields.slug} />}
             />
         ))
     }
