@@ -47,7 +47,7 @@ const ListOfInternships = ({data}) => (
                 reverseOrder={i % 2 == 0}
                 primarySlot={
                     <div className="flex justify-center items-center lg:justify-start flex-wrap text-center md:text-center lg:text-left xl:text-left">
-                        <h3 className="text-3xl font-semibold leading-tight">{internship.node.frontmatter.title}</h3>
+                        <h3 className="text-3xl font-semibold leading-tight w-full">{internship.node.frontmatter.title}</h3>
                         <StatusPill status = {internship.node.frontmatter.status} />
                         <p className="mt-4 w-full text-xl font-light leading-relaxed mb-10">
                             {internship.node.frontmatter.duration}<br />
