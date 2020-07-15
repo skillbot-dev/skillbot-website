@@ -9,7 +9,6 @@ module.exports = {
     }
   },
   plugins: [
-    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-netlify-identity-widget`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -83,16 +82,22 @@ module.exports = {
         ]
       }
     },
+    {
+      resolve: `gatsby-plugin-netlify-cms`,
+      options: {
+        modulePath: `${__dirname}/src/cms/cms.js`
+      }
+    },
     `gatsby-transformer-json`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-netlify`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
         trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID || "none",
       }
-    }
+    },
+    `gatsby-plugin-netlify`,
   ]
 };

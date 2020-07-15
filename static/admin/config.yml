@@ -8,8 +8,6 @@ backend:
     uploadMedia: '[skip ci] Upload “{{path}}”'
     deleteMedia: '[skip ci] Delete “{{path}}”'
 
-local_backend : true
-
 media_folder: static/images
 public_folder: /images
 
@@ -19,9 +17,7 @@ collections:
     folder : "src/pages/internships"
     create : true
     slug: '{{slug}}'
-    media_folder: ''
-    public_folder: ''
-    path: '{{slug}}/internship'
+    path: '{{year}}-{{month}}-{{day}}/{{slug}}}'
     editor:
       preview : true
     fields:
@@ -52,8 +48,6 @@ collections:
     folder : "src/pages/skill-dev-program"
     create : true
     slug: '{{slug}}'
-    media_folder: ''
-    public_folder: ''
     path: '{{slug}}/index'
     editor:
       preview : true
