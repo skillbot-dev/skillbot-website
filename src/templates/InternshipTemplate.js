@@ -34,6 +34,7 @@ export const query = graphql`
                 topics_covered
                 key_features
                 work_position
+                career_prospects
             }
         }
     }
