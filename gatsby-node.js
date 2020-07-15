@@ -1,24 +1,11 @@
 const path = require('path')
 const { createFilePath } = require( `gatsby-source-filesystem`)
+const { fmImagesToRelative } = require('gatsby-remark-relative-images');
 
 exports.createPages = async ({ graphql, actions: { createPage }}) => {
     const data = await graphql(
     `
         {
-            allInternshipsJson {
-                edges{
-                    node{
-                        slug
-                    }
-                }
-            }
-            allServicesJson {
-                edges{
-                    node{
-                        slug
-                    }
-                }
-            }
             allMarkdownRemark{
                 edges{
                     node{
@@ -37,30 +24,20 @@ exports.createPages = async ({ graphql, actions: { createPage }}) => {
         return
     }
 
-    // data.data.allInternshipsJson.edges.forEach(internship => {
+    // data.data.allServicesJson.edges.forEach(service => {
     //     createPage({
-    //         path:  `/internships/${internship.node.slug}/`,
-    //         component: require.resolve("./src/templates/InternshipTemplate.js"),
+    //         path:  `/services/${service.node.slug}/`,
+    //         component: require.resolve("./src/templates/ServiceTemplate.js"),
     //         context: {
-    //             slug: internship.node.slug
+    //             slug: service.node.slug
     //         }
     //     })
     // });
 
-    data.data.allServicesJson.edges.forEach(service => {
-        createPage({
-            path:  `/services/${service.node.slug}/`,
-            component: require.resolve("./src/templates/ServiceTemplate.js"),
-            context: {
-                slug: service.node.slug
-            }
-        })
-    });
-
     data.data.allMarkdownRemark.edges.forEach(internship =>{
         createPage({
             path: `${internship.node.fields.slug}`,
-            component: require.resolve("./src/templates/Internship.js"),
+            component: require.resolve("./src/templates/InternshipTemplate.js"),
             context: {
                 id : internship.node.id
             }
@@ -70,10 +47,9 @@ exports.createPages = async ({ graphql, actions: { createPage }}) => {
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
     const { createNodeField } = actions
-
+    fmImagesToRelative(node);
     if (node.internal.type === `MarkdownRemark`) {
         const value = createFilePath({ node, getNode })
-        console.log('hwwl')
         createNodeField({
             name: `slug`,
             node,
