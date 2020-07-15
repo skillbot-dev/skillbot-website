@@ -1,18 +1,18 @@
+const path = require('path')
+const { createFilePath } = require( `gatsby-source-filesystem`)
+const { fmImagesToRelative } = require('gatsby-remark-relative-images');
+
 exports.createPages = async ({ graphql, actions: { createPage }}) => {
     const data = await graphql(
     `
         {
-            allInternshipsJson {
+            allMarkdownRemark{
                 edges{
                     node{
-                        slug
-                    }
-                }
-            }
-            allServicesJson {
-                edges{
-                    node{
-                        slug
+                        id
+                        fields{
+                            slug
+                        }
                     }
                 }
             }
@@ -24,23 +24,36 @@ exports.createPages = async ({ graphql, actions: { createPage }}) => {
         return
     }
 
-    data.data.allInternshipsJson.edges.forEach(internship => {
+    // data.data.allServicesJson.edges.forEach(service => {
+    //     createPage({
+    //         path:  `/services/${service.node.slug}/`,
+    //         component: require.resolve("./src/templates/ServiceTemplate.js"),
+    //         context: {
+    //             slug: service.node.slug
+    //         }
+    //     })
+    // });
+
+    data.data.allMarkdownRemark.edges.forEach(internship =>{
         createPage({
-            path:  `/internships/${internship.node.slug}/`,
+            path: `${internship.node.fields.slug}`,
             component: require.resolve("./src/templates/InternshipTemplate.js"),
             context: {
-                slug: internship.node.slug
+                id : internship.node.id
             }
         })
-    });
+    })
+}
 
-    data.data.allServicesJson.edges.forEach(service => {
-        createPage({
-            path:  `/services/${service.node.slug}/`,
-            component: require.resolve("./src/templates/ServiceTemplate.js"),
-            context: {
-                slug: service.node.slug
-            }
+exports.onCreateNode = ({ node, actions, getNode }) => {
+    const { createNodeField } = actions
+    fmImagesToRelative(node);
+    if (node.internal.type === `MarkdownRemark`) {
+        const value = createFilePath({ node, getNode })
+        createNodeField({
+            name: `slug`,
+            node,
+            value,
         })
-    });
+    }
 }
