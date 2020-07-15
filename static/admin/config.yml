@@ -17,7 +17,6 @@ collections:
     folder : "src/pages/internships"
     create : true
     slug: '{{slug}}'
-    path: '{{year}}-{{month}}-{{day}}/{{slug}}}'
     editor:
       preview : true
     fields:
