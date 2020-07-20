@@ -1,6 +1,6 @@
 ---
 template: internship
-status: true
+status: false
 title: Power Electronics Converter Design for EV Technology Using MATLAB
 work-position: Power Electronics Intern
 career-prospects: Power Delivery Engineer, Power Electronics Design Engineer,
