@@ -80,6 +80,9 @@ const Footer = () => (
 				<div className="w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 px-3 p-6">
 					<h2 className="text-lg font-semibold">©Copyrights Skillbot : Education Strategy 2020-2021</h2>
 				</div>
+				<div className="w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 px-3 p-6">
+					<h2 className="text-lg font-semibold">Designed by <OutboundLink href="https://srigovindnayak.com">Srigovind Nayak</OutboundLink></h2>
+				</div>
 			</div>
 		</div>
 	</footer>
