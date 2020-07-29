@@ -6,11 +6,11 @@ work-position: Digital Image Processing Intern
 career-prospects: Image Processing Engineers in fields of science, engineering,
   defence, manufacturing, agriculture, medicine etc.
 sponsor: BNM Institute of Technology
-start_date: 13th Jul 2020
+start_date: 3rd Aug 2020
 timings: 3:00pm to 7:00pm
 duration: 4 Weeks
 registration_fee: 2000
-registration_link: https://forms.gle/kTbUrpBz9hSTs8iv6
+registration_link: https://docs.google.com/forms/d/e/1FAIpQLSdMsRwcKwWdeLTb6U4uJbtUl3Cra0jQv_EplFU9vw5A0lG2bw/viewform
 image: /images/digital-image-processing.png
 key_features:
   - Learn from Research Specialists
@@ -18,6 +18,7 @@ key_features:
   - Hands on learning with MATLAB
   - Learn about industry standards in image processing
   - Top 5 students get assistance to publish a papers in reputed journals
+  - Top 3 Projects get cash prizes
 topics_covered:
   - Introduction to Image Processing
   - The MATLAB computing Environment
