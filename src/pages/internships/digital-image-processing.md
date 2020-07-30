@@ -5,9 +5,9 @@ title: Digital Image Processing
 work-position: Digital Image Processing Intern
 career-prospects: Image Processing Engineers in fields of science, engineering,
   defence, manufacturing, agriculture, medicine etc.
-sponsor: BNM Institute of Technology
+sponsor: " "
 start_date: 3rd Aug 2020
-timings: 3:00pm to 7:00pm
+timings: " "
 duration: 4 Weeks
 registration_fee: 2000
 registration_link: https://pages.razorpay.com/skillbot-dip-internship
