@@ -52,7 +52,6 @@ const ListOfInternships = ({data}) => (
                         <p className="mt-4 w-full text-xl font-light leading-relaxed mb-10">
                             {internship.node.frontmatter.duration}<br />
                             Starting : {internship.node.frontmatter.start_date}<br />
-                            Sponsored By : {internship.node.frontmatter.sponsor}
                         </p>
                         <div className="mt-4 w-full md:mt-4 mb-6 text-lg lg:text-2xl xl:text-3xl font-bold font-raleway">
                             <Button className="rounded-full" size="lg" toPage={`${internship.node.fields.slug}`}>Know More</Button>

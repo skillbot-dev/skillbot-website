@@ -52,7 +52,7 @@ const InternshipTemplate = ({data}) => {
                         <h1 className="text-4xl lg:text-6xl xl:text-6xl font-raleway font-bold leading-none">
                             {internship.title}
                         </h1>
-                        <p className="mt-6 text-gray-600 font-montserrat">Sponsored by : {internship.sponsor}</p>
+                        <p className="mt-6 text-gray-600 font-montserrat">{internship.sponsor}</p>
                     </div>
                     <div className="my-auto lg:w-1/2">
                         <Image fluid={internship.image.childImageSharp.fluid} />
