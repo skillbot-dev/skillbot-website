@@ -10,7 +10,7 @@ start_date: 3rd Aug 2020
 timings: 3:00pm to 7:00pm
 duration: 4 Weeks
 registration_fee: 2000
-registration_link: https://docs.google.com/forms/d/e/1FAIpQLSdMsRwcKwWdeLTb6U4uJbtUl3Cra0jQv_EplFU9vw5A0lG2bw/viewform
+registration_link: https://pages.razorpay.com/skillbot-dip-internship
 image: /images/digital-image-processing.png
 key_features:
   - Learn from Research Specialists
