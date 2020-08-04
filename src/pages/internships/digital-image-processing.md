@@ -1,6 +1,6 @@
 ---
 template: internship
-status: true
+status: false
 title: Digital Image Processing
 work-position: Digital Image Processing Intern
 career-prospects: Image Processing Engineers in fields of science, engineering,
