@@ -1,15 +1,15 @@
 ---
 template: internship
-status: false
+status: true
 title: Data Science using Python
 work-position: Data Science Intern
 career-prospects: Data Scientist, Data Analyst, Data Engineer, AI Engineer, ML Engineer
 sponsor: BNM Institute of Technology
-start_date: 13th Jul 2020
-timings: 9:00am to 1:00pm
+start_date: 10th Aug 2020
+timings: TBA
 duration: 4 Weeks
-registration_fee: 2000
-registration_link: https://forms.gle/pBk1q5dQEW3dizTX9
+registration_fee: 2500
+registration_link: https://rzp.io/l/p9RB1UD
 image: /images/data-science.png
 key_features:
   - Inexpensive Course on the Fundamentals of Data Science
