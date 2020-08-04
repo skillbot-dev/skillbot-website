@@ -9,7 +9,7 @@ import StatusPill from '../../components/StatusPill'
 
 export const query = graphql`
     query {
-        allMarkdownRemark (sort: {fields: [frontmatter___start_date], order: DESC }) {
+        allMarkdownRemark (sort: {fields: [frontmatter___status], order: DESC }) {
             edges {
                 node {
                     fields{
