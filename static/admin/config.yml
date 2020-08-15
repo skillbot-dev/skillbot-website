@@ -70,3 +70,18 @@ collections:
           - { label: "Name", name: "contact_name", widget: 'string'}
           - { label: "Phone", name: "phone_number", widget: 'string'}
           - { label: "LinkedIn ID", name: "linkedin_url", widget: 'string'}
+
+  - name : "testimonial"
+    label : "Testimonial"
+    folder: "src/pages/testimonials"
+    create: true
+    slug: '{{slug}}'
+    path: '{{slug}}/index'
+    editor:
+      preview : true
+    fields:
+     - { label: 'Date Added', name: 'Date Added', widget: 'datetime' }
+     - { label: 'Content', name: 'content', widget: 'markdown'}
+     - { label: 'Name', name: 'name', widget: 'string' }
+     - { label: 'Designation', name: 'designation', widget: 'string' }
+     - { label: 'Image', name: 'image', widget: 'image' }

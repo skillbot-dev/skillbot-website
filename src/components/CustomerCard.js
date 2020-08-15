@@ -1,19 +1,18 @@
 import React from 'react';
 import Card from './Card';
 
-const CustomerCard = ({ customer }) => (
+const CustomerCard = ({ testimonial }) => (
   <Card className="mb-8">
-    <p className="text-xl font-semibold">{customer.title}</p>
-    <p className="mt-6">{customer.content}</p>
+    <p className="mt-6">{testimonial.content}</p>
     <div className="flex items-center mt-8">
       <img
         className="w-12 h-12 mr-4 rounded-full"
-        src={customer.customerImage}
-        alt={customer.customerName}
+        src={testimonial.image}
+        alt={testimonial.name}
       />
       <div>
-        <p>{customer.customerName}</p>
-        <p className="text-sm text-gray-600">{customer.customerTitle}</p>
+        <p>{testimonial.name}</p>
+        <p className="text-sm text-gray-600">{testimonial.designation}</p>
       </div>
     </div>
   </Card>
