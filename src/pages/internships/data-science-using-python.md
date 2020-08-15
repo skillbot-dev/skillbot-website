@@ -1,6 +1,6 @@
 ---
 template: internship
-status: true
+status: false
 title: Data Science using Python
 work-position: Data Science Intern
 career-prospects: Data Scientist, Data Analyst, Data Engineer, AI Engineer, ML Engineer
